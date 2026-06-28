@@ -1,0 +1,63 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Apple iPhone 15 Pro",
+      "price": 999,
+      "url": "https://images.unsplash.com/photo-1695048133142-1a20484d2569?auto=format&fit=crop&w=800&q=80",
+      "stock": 24
+    },
+    {
+      "id": 2,
+      "name": "Fone de Ouvido Sony WH-1000XM5",
+      "price": 398,
+      "url": "https://images.unsplash.com/photo-1618366712010-f4ae9c647dcb?auto=format&fit=crop&w=800&q=80",
+      "stock": 10
+    },
+    {
+      "id": 3,
+      "name": "Nintendo Switch OLED",
+      "price": 349.99,
+      "url": "https://http2.mlstatic.com/D_NQ_NP_715776-MLA99972881871_112025-O.webp",
+      "stock": 0
+    },
+    {
+      "id": 4,
+      "name": "Amazon Echo Dot (5ª Geração)",
+      "price": 49.99,
+      "url": "https://images.unsplash.com/photo-1543512214-318c7553f230?auto=format&fit=crop&w=800&q=80",
+      "stock": 45
+    },
+    {
+      "id": 5,
+      "name": "Mouse Sem Fio Logitech MX Master 3S",
+      "price": 99.99,
+      "url": "https://http2.mlstatic.com/D_NQ_NP_2X_748742-MLA103652475421_012026-F.webp",
+      "stock": 12
+    },
+    {
+      "name": "Teste",
+      "description": "teste 1",
+      "price": 123,
+      "stock": 1,
+      "url": "https://enfoquevisual.com.br/cdn/shop/products/102-022.jpg?v=1574792050",
+      "id": 6
+    },
+    {
+      "name": "Produto de teste 2 ",
+      "description": "segundo teste de produto",
+      "price": 1,
+      "stock": 2,
+      "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT07OTzRSvb2qN51n_gHTF6SqCKur3N5mvkZQ&s",
+      "id": 7
+    },
+    {
+      "name": "Protudo de teste 3",
+      "description": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT07OTzRSvb2qN51n_gHTF6SqCKur3N5mvkZQ&s",
+      "price": 1,
+      "stock": 2,
+      "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT07OTzRSvb2qN51n_gHTF6SqCKur3N5mvkZQ&s",
+      "id": 8
+    }
+  ]
+}
