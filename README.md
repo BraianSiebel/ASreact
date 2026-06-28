@@ -37,34 +37,26 @@ As requisições foram feitas utilizando a API nativa `fetch` dentro de hooks `u
 
 ## 6. Screenshots do Sistema
 
-**Tela inicial (Home) com a listagem de produtos**
+**Tela inicial (Home)**
 ![Home](./screenshots/home.png)
-*Lista gerada a partir do GET na API.*
 
 **Detalhes do Produto**
 ![Detalhes](./screenshots/detalhes.png)
-*Página dinâmica usando useParams para buscar o ID do produto.*
 
-**Cadastro Preenchido**
+**Cadastro Válido**
 ![Cadastro OK](./screenshots/cadastro-ok.png)
-*Formulário preenchido e pronto para disparar o POST.*
 
-**Validação de Erro no Cadastro**
+**Cadastro com Erro**
 ![Cadastro Erro](./screenshots/cadastro-erro.png)
-*Erro exibido na tela e cursor focado no input errado através do useRef.*
 
 **Edição de Produto**
-![Edição](./screenshots/edicao.png)
-*Dados carregados no formulário preparando a requisição PUT.*
+![Edição](./screenshots/Edição.png)
 
 **Carrinho de Compras**
-![Carrinho](./screenshots/carrinho.png)
-*Itens no carrinho e cálculo do total global.*
+![Carrinho](./screenshots/Carrinho.png)
 
-**Bloqueio de Estoque**
-![Estoque Limite](./screenshots/carrinho-limite.png)
-*Sistema impedindo de adicionar mais itens do que o disponível na API.*
+**Limite de Estoque**
+![Estoque Limite](./screenshots/Estoque%20Limite.png)
 
 **Página 404**
 ![Página 404](./screenshots/404.png)
-*Fallback visual para rotas inexistentes.*
