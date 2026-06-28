@@ -21,7 +21,6 @@ export default function Details() {
 
     if (!product) return <p className="p-4 text-center">Carregando detalhes...</p>;
 
-    // Verifica quantos deste item já estão no carrinho
     const itemInCart = cart.find(item => item.id === product.id);
     const reachedMaxStock = itemInCart && itemInCart.quantity >= product.stock;
     const isOutOfStock = product.stock === 0 || product.stock === "0";

@@ -4,14 +4,11 @@ import { CartContext } from "../context/CartContext";
 
 export default function Card({ product }) {
     const navigate = useNavigate();
-    // 1. Importamos também o 'cart' de dentro do contexto
     const { addToCart, cart } = useContext(CartContext);
 
-    // 2. Calculamos quanto deste produto já está no carrinho
     const itemInCart = cart.find(item => item.id === product.id);
     const quantityInCart = itemInCart ? itemInCart.quantity : 0;
     
-    // 3. O estoque real que aparece na tela é a diferença
     const availableStock = product.stock - quantityInCart;
 
     return (
@@ -20,13 +17,10 @@ export default function Card({ product }) {
                 <h3 className="text-lg font-bold">{product.name}</h3>
                 <img src={product.url} alt={product.name} className="w-full h-48 object-cover mb-4 mt-2 rounded" />
                 <p className="text-gray-800 font-semibold">R$ {Number(product.price).toFixed(2)}</p>
-                
-                {/* Exibimos a variável dinâmica em vez do product.stock fixo */}
                 <p className="text-gray-600">Estoque: {availableStock}</p>
             </div>
             
             <div className="mt-4 flex flex-col gap-2">
-                {/* Agora a regra de Esgotado olha para o estoque disponível */}
                 {availableStock <= 0 ? (
                     <span className="bg-red-500 text-white px-4 py-2 rounded text-center font-bold">
                         Esgotado

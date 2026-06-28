@@ -6,7 +6,6 @@ export function CartProvider({ children }) {
     const [cart, setCart] = useState([]);
     const [cartTotal, setCartTotal] = useState(0);
 
-    // Atualiza o total sempre que o carrinho muda
     useEffect(() => {
         const total = cart.reduce((acc, item) => acc + (item.price * item.quantity), 0);
         setCartTotal(total);
@@ -17,7 +16,6 @@ export function CartProvider({ children }) {
             const existingItem = prevCart.find((item) => item.id === product.id);
             
             if (existingItem) {
-                // Bloqueia se já atingiu o estoque
                 if (existingItem.quantity >= product.stock) {
                     alert("Estoque máximo atingido para este produto!");
                     return prevCart;
